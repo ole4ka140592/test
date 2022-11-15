@@ -42,7 +42,7 @@ export const Form = () => {
                     />
                 </div>
                 <button className="inputSend" onClick={sendValue}>
-                    <div className="inputSendPlaceholder"><p className="fa-solid fa-check">ЗАКАЗАТЬ</p></div>
+                    <div className="inputSendPlaceholder"><a className="fa-solid fa-check">ЗАКАЗАТЬ</a></div>
                 </button>
                 <div className="error">{error ? error : ""}</div>
                 <div className="status">{status}</div>
