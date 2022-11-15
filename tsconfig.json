@@ -1,0 +1,63 @@
+//{
+//  "compilerOptions": {
+//    "outDir": "./dist/",
+//    "noImplicitAny": true,
+//    "module": "es6",
+//    "target": "es5",
+//    "jsx": "react-jsx",
+//    "allowJs": true,
+//    "moduleResolution": "node",
+//    "allowSyntheticDefaultImports": true
+//  }
+//}
+
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "customTemplate": "./customTemplate.js"
+        }
+      }
+    ],
+    "target": "ESNext",
+    "module": "umd",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "jsx": "react",
+    "noEmit": true,
+    "sourceMap": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
+  },
+  "include": ["src"]
+}
+
+//{
+//  "compilerOptions": {
+//    "outDir": "./dist/",
+//    "noImplicitAny": true,
+//    "module": "es6",
+//    "target": "es5",
+//    "jsx": "react",
+//    "allowJs": true,
+//    "moduleResolution": "node",
+//    "plugins": [
+//      {
+//        "name": "typescript-plugin-css-modules",
+//        "options": {
+//          "customTemplate": "./customTemplate.js"
+//      }
+//    ]
+//  }
+//}

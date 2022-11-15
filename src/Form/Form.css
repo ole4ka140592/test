@@ -1,0 +1,104 @@
+.generalForm {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.inputNumber {
+    transform: skew(-47deg);
+    width: 400px;
+    height: 55px;
+    background: #d0d0d0;
+    border: white 1px solid;
+    position: relative;
+}
+
+.inputNumberPlaceholder {
+    transform: skew(47deg);
+    height: 90%;
+    width: 83%;
+    font-style: inherit;
+    outline: none;
+    background: #d0d0d0;
+    border: none;
+    font-size: 18px;
+}
+
+.inputNumberPlaceholder[type="number"]::-webkit-outer-spin-button,
+.inputNumberPlaceholder[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputSend {
+    width: 250px;
+    min-height: 55px;
+    transform: skew(-47deg);
+    text-align: center;
+    background-color: red;
+    border: white 1px solid;
+    font-size: large;
+    vertical-align: center;
+    color: white;
+    cursor: pointer;
+    caret-color: transparent;
+    text-shadow: 0 0 0 black;
+    position: relative;
+}
+
+.inputSendPlaceholder {
+    color: white;
+    letter-spacing: 1px;
+    transform: skew(47deg);
+}
+
+.error {
+    position: absolute;
+    color: white;
+    top: 60px;
+}
+
+.status{
+    position: absolute;
+    color: white;
+    top: 90px;
+}
+
+@media screen and (max-width: 991px) {
+    .inputNumber {
+        transform: none;
+        width: 200px;
+        border: white 1px solid;
+    }
+
+    .inputSend {
+        transform: none;
+        width: 200px;
+    }
+
+    .inputNumberPlaceholder {
+        transform: none;
+    }
+
+    .inputSendPlaceholder {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .inputNumber {
+        width: 130px;
+    }
+
+    .inputSend {
+        width: 130px;
+    }
+}
